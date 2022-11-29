@@ -17,9 +17,8 @@
     <div class="container">
       <div class="form-container">
         <div class="circle__container circle">
-          <form class="form flow-content">
+          <form onSubmit="return false" class="form flow-content">
             <h2 class="text-center form__title">GPA Calculator</h2>
-
             <div class="form__group">
               <label for="score" class="form__label">Score:</label>
               <input type="text" name="" id="score" class="form__input" />
@@ -45,11 +44,13 @@
                 class="btn btn__link"
                 id="btnReset"
               />
-              <input
+              <input            
                 type="submit"
                 value="Calculate"
                 class="btn btn__primary"
                 id="btnCalc"
+          
+                
               />
             </div>
           </form>
